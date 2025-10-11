@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url("../images/hero.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+main nav {
+  height: 100px;
+}
+
+.hero .img {
+  width: 600px !important;
+  height: auto !important;
+}
+
+.hero .img img {
+  width: 100%;
+}
+
+.hero h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.hero p {
+  margin: 0 !important;
+  color: #60cda5;
+  line-height: 1.15;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Kalnia", serif;
+}
+
+@media (max-width: 768px) {
+  .hero .img {
+    width: 400px !important;
+    height: auto !important;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+@media (width < 992px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    z-index: 1000;
+    position: relative;
+  }
+}
+
+.about .cards .card img {
+  height: 332px !important;
+}
+
+.about .cards .card .card-body h5 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Kalnia", serif;
+}
+
+.about .cards .card .card-body p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.owl-nav button {
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  transition: all 0.5s;
+  border: 1px solid #2e614e !important;
+}
+
+.owl-nav button:hover {
+  background: #2e614e;
+  color: #fff;
+}
+
+.owl-nav button.owl-prev {
+  border-top-right-radius: 16px !important;
+  border-bottom-left-radius: 16px !important;
+}
+
+.owl-nav button.owl-next {
+  border-top-left-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+}
+
+section h2 {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: "Kalnia", serif;
+}
+
+form label {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #2e614e;
+}
+
+form input,
+form textarea {
+  outline: none;
+  border: 1px solid;
+  transition: all 0.5s;
+}
+
+form input:hover,
+form textarea:hover {
+  border: 1px solid #ffb536;
+  outline: none;
+}
+
+footer {
+  position: relative;
+}
+
+footer .img {
+  background-image: url("../images/footer");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+footer .img::before {
+  content: "";
+  background-image: url("../images/heading.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  width: 250px;
+  height: 100px;
+}
+
+footer .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  bottom: 10px;
+  right: -40px;
+  background-color: #2e614e;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-top-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show {
+  right: 10px;
+}
